@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- El título y estilos de la página los mantuve igual -->
     <title>Hello Rigo with Vanilla.js</title>
     <link
       rel="stylesheet"
@@ -14,16 +15,41 @@
   </head>
   <body>
     <div class="container-fluid text-center">
+      <!-- El h1 y la imagen también las mantuve igual -->
       <h1 class="mt-5">Hello Rigo!</h1>
       <img src="./rigo-baby.jpg" />
       <p class="alert alert-warning mt-4">
         If this text is <b>not</b> centered and <b>yellow</b>, you probably have
         an error
       </p>
+
+      <!-- Generador de excusas.
+     Va en un contenedor aparte para mantener la responsividad,
+     aprovechando la librería Bootstrap.-->
+
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-12 text-center">
+            <button id="generate" class="btn btn-primary">
+              Generar Excusa
+            </button>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12 text-center">
+            <div class="alert alert-info" id="excuse"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Fin del generador de excusas -->
+
       <div class="fixed-bottom p-4">
         Made with ❤️ by
         <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
       </div>
     </div>
+
+    <!-- Link al script proporcionado en la plantilla -->
+    <script src="app.js"></script>
   </body>
 </html>
